@@ -118,7 +118,7 @@ const API_KEY = 'ENTER YOUR API';
 ```
 
 ## ER-Diagram 
-<img src = 'images/erdiagarm.png' width = 500>
+<img src = 'https://github.com/mishrakeshav/Django-E-Commerce/tree/master/images' width = 500>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
