@@ -1,0 +1,67 @@
+//// -- LEVEL 1
+//// -- Tables and References
+
+// Creating tables
+Table user as U {
+  id int [pk, increment] // auto-increment
+  first_name varchar
+  last_name varchar
+  created_at timestamp
+  email varchar
+  phone_number int
+  password int 
+  is_admin boolean
+}
+
+Table order {
+  customer int 
+  date_ordered datetime
+  complete boolean
+  transaction_id int [pk, increment]
+}
+Table order_item {
+  product int 
+  order int 
+  quantity int 
+  date_added datetime
+}
+
+Table products {
+  id int [pk , increment]
+  name varchar 
+  description varchar
+  category int 
+  price float 
+  picture varchar
+  quantity int 
+}
+Table shipping_address {
+  id int [pk , increment]
+  customer varchar 
+  order int
+  address text
+  city varchar
+  state varchar
+  zipcode int 
+  date_added datetime
+}
+
+Table category{
+  id int pk
+  name varchar 
+}
+
+
+
+
+Ref: "category"."id" < "products"."category"
+
+Ref: "order_item"."product" < "products"."id"
+
+Ref: "user"."id" < "order"."customer"
+
+
+
+Ref: "order_item"."order" < "order"."transaction_id"
+
+Ref: "order"."transaction_id" < "shipping_address"."order"
