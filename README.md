@@ -118,7 +118,7 @@ const API_KEY = 'ENTER YOUR API';
 ```
 
 ## ER-Diagram 
-<img src = 'images/erdaigarm.png' width = 200>
+<img src = 'images/erdiagarm.png' width = 500>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
