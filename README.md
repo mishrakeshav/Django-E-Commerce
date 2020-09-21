@@ -54,7 +54,7 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
-* [ER-Diagram](#er-digarm)
+* [ER-Diagram](#er-diagram)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
