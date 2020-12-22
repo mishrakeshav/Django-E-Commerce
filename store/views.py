@@ -17,6 +17,11 @@ def cart(request):
         order , created = Order.objects.get_or_create(customer = customer, complete=False)
         items = order.orderitem_set.all()
     else:
+        try:
+            cart = json.loads(request.COOKIES['cart'])
+        except:
+            cart = {}
+        print(cart)
         items = []
         order = {'get_cart_items': 0, 'get_cart_total':0}
 
