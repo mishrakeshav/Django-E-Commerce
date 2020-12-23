@@ -22,7 +22,6 @@
 
 * [Built With](#built-with)
 * [Getting Started](#getting-started)
-* [ER-Diagram](#er-diagram)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
@@ -57,10 +56,6 @@ git clone https://github.com/mishrakeshav/Django-E-Commerce.git
 ```sh
 pip install -r requirements.tct
 ```
-
-
-## ER-Diagram 
-<img src = 'images/erdiagram.png' width = 700>
 
 
 <!-- CONTRIBUTING -->
